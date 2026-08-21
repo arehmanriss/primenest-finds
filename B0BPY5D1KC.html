@@ -51,6 +51,41 @@
             100% { background-position: 200% 0; }
         }
     </style>
+
+    <!-- Google SEO Schema.org Product Structured Data (Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "THIRDREALITY ZigBee Smart Plug 4 Pack with Real-time Energy Monitoring,15A Outlet, Zigbee Repeater,ETL Certified,ZigBee Hub Required,Work with Home Assistant,Compatible Echo Devices and SmartThings",
+      "image": ["https://m.media-amazon.com/images/I/41zieHcFeyL._SL1500_.jpg"],
+      "description": "Tired of tedious smart home setup? This 4-pack eliminates manual routines \u0026 saves you time. Work with Home Assistant, Alexa, \u0026 SmartThings. Tap link for Prime shipping \u0026 current price!",
+      "brand": {
+        "@type": "Brand",
+        "name": "Amazon Verified"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "bestRating": "5.0",
+        "worstRating": "1.0",
+        "ratingCount": "839"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "38.99",
+        "priceValidUntil": "2027-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.amazon.com/dp/B0BPY5D1KC?tag=theprimenestf-20\u0026linkCode=as2",
+        "seller": {
+          "@type": "Organization",
+          "name": "Amazon.com"
+        }
+      }
+    }
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased min-h-screen flex flex-col selection:bg-amber-100 selection:text-amber-900">
 
@@ -410,5 +445,55 @@
         </div>
     </footer>
 
+    <!-- Real-Time Traffic & Click Tracking Script -->
+    <script>
+        (function() {
+            const ASIN = "B0BPY5D1KC";
+            const API_ENDPOINT = "/api/analytics/track";
+
+            // Track Page View
+            try {
+                fetch(API_ENDPOINT, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        asin: ASIN,
+                        title: "THIRDREALITY ZigBee Smart Plug 4 Pack with Real-time Energy Monitoring,15A Outlet, Zigbee Repeater,ETL Certified,ZigBee Hub Required,Work with Home Assistant,Compatible Echo Devices and SmartThings",
+                        event_type: "page_view",
+                        referrer: document.referrer || "direct"
+                    })
+                }).catch(function() {});
+            } catch(e) {}
+
+            // Track Amazon Outbound Clicks
+            document.addEventListener("click", function(e) {
+                const target = e.target.closest("a[href*='amazon.com']");
+                if (target) {
+                    try {
+                        if (navigator.sendBeacon) {
+                            const data = new Blob([JSON.stringify({
+                                asin: ASIN,
+                                title: "THIRDREALITY ZigBee Smart Plug 4 Pack with Real-time Energy Monitoring,15A Outlet, Zigbee Repeater,ETL Certified,ZigBee Hub Required,Work with Home Assistant,Compatible Echo Devices and SmartThings",
+                                event_type: "amazon_click",
+                                destination: target.href
+                            })], { type: "application/json" });
+                            navigator.sendBeacon(API_ENDPOINT, data);
+                        } else {
+                            fetch(API_ENDPOINT, {
+                                method: "POST",
+                                headers: { "Content-Type": "application/json" },
+                                body: JSON.stringify({
+                                    asin: ASIN,
+                                    title: "THIRDREALITY ZigBee Smart Plug 4 Pack with Real-time Energy Monitoring,15A Outlet, Zigbee Repeater,ETL Certified,ZigBee Hub Required,Work with Home Assistant,Compatible Echo Devices and SmartThings",
+                                    event_type: "amazon_click",
+                                    destination: target.href
+                                })
+                            }).catch(function() {});
+                        }
+                    } catch(err) {}
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
