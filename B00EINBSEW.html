@@ -233,15 +233,13 @@
             </div>
         </section>
 
-        <!-- Deep Market Breakdown & Key Features -->
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-8">
+        <!-- Deep Market Breakdown & Key Features (Balanced 2-Column Grid) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             
-            <!-- Left Column: Problem Solved & Key Features -->
-            <div class="md:col-span-7 space-y-6">
-                
-                <!-- Problem Solved Section -->
-                
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
+            <!-- Problem Solved Section -->
+            
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 flex flex-col justify-between">
+                <div>
                     <h2 class="text-lg font-extrabold text-[#001c64] mb-3 flex items-center space-x-2">
                         <svg class="w-5 h-5 text-[#0070ba]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                         <span>The Problem It Solves</span>
@@ -250,30 +248,81 @@
                         Say goodbye to tedious daily routines and hello to a stress-free morning with Coop Home Goods&#39; innovative design.
                     </p>
                 </div>
-                
+            </div>
+            
 
-                <!-- Key Features & Specs -->
+            <!-- Key Features & Specs -->
+            
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
+                <h2 class="text-lg font-extrabold text-[#001c64] mb-4 flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-[#0070ba]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    <span>Key Highlights &amp; Features</span>
+                </h2>
+                <ul class="space-y-3">
+                    
+                    <li class="flex items-start space-x-3 text-sm text-slate-700">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-[#e6f0fa] text-[#0070ba] flex items-center justify-center text-xs font-bold mt-0.5">✓</span>
+                        <span>Original adjustable design</span>
+                    </li>
+                    
+                    <li class="flex items-start space-x-3 text-sm text-slate-700">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-[#e6f0fa] text-[#0070ba] flex items-center justify-center text-xs font-bold mt-0.5">✓</span>
+                        <span>High-grade materials</span>
+                    </li>
+                    
+                    <li class="flex items-start space-x-3 text-sm text-slate-700">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-[#e6f0fa] text-[#0070ba] flex items-center justify-center text-xs font-bold mt-0.5">✓</span>
+                        <span>Thousands of verified customer endorsements</span>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+
+        </div>
+
+        <!-- Pros & Cons Side-by-Side (Full-Width Horizontal Grid) -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
-                    <h2 class="text-lg font-extrabold text-[#001c64] mb-4 flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-[#0070ba]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                        <span>Key Highlights &amp; Features</span>
-                    </h2>
-                    <ul class="space-y-3">
+                <!-- Pros -->
+                <div>
+                    <h3 class="flex items-center space-x-2 text-emerald-800 font-bold text-sm mb-3">
+                        <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                        <span>Why Buyers Love It (Pros)</span>
+                    </h3>
+                    <ul class="space-y-2.5">
                         
-                        <li class="flex items-start space-x-3 text-sm text-slate-700">
-                            <span class="flex-shrink-0 w-5 h-5 rounded-full bg-[#e6f0fa] text-[#0070ba] flex items-center justify-center text-xs font-bold mt-0.5">✓</span>
-                            <span>Original adjustable design</span>
+                        <li class="flex items-start space-x-2 text-xs sm:text-sm text-slate-700">
+                            <span class="text-emerald-600 font-bold flex-shrink-0">+</span>
+                            <span>Significantly cuts down preparation and organization time</span>
                         </li>
                         
-                        <li class="flex items-start space-x-3 text-sm text-slate-700">
-                            <span class="flex-shrink-0 w-5 h-5 rounded-full bg-[#e6f0fa] text-[#0070ba] flex items-center justify-center text-xs font-bold mt-0.5">✓</span>
-                            <span>High-grade materials</span>
+                        <li class="flex items-start space-x-2 text-xs sm:text-sm text-slate-700">
+                            <span class="text-emerald-600 font-bold flex-shrink-0">+</span>
+                            <span>Made with high-grade materials</span>
                         </li>
                         
-                        <li class="flex items-start space-x-3 text-sm text-slate-700">
-                            <span class="flex-shrink-0 w-5 h-5 rounded-full bg-[#e6f0fa] text-[#0070ba] flex items-center justify-center text-xs font-bold mt-0.5">✓</span>
+                        <li class="flex items-start space-x-2 text-xs sm:text-sm text-slate-700">
+                            <span class="text-emerald-600 font-bold flex-shrink-0">+</span>
                             <span>Thousands of verified customer endorsements</span>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Cons -->
+                
+                <div class="md:border-l md:border-slate-200 md:pl-8 border-t md:border-t-0 border-slate-100 pt-4 md:pt-0">
+                    <h3 class="flex items-center space-x-2 text-rose-800 font-bold text-sm mb-3">
+                        <svg class="w-4 h-4 text-rose-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+                        <span>Things to Consider (Cons)</span>
+                    </h3>
+                    <ul class="space-y-2.5">
+                        
+                        <li class="flex items-start space-x-2 text-xs sm:text-sm text-slate-600">
+                            <span class="text-rose-500 font-bold flex-shrink-0">-</span>
+                            <span>May require some initial setup</span>
                         </li>
                         
                     </ul>
@@ -281,70 +330,18 @@
                 
 
             </div>
+        </div>
 
-            <!-- Right Column: Pros, Cons & Audience -->
-            <div class="md:col-span-5 space-y-6">
-                
-                <!-- Pros & Cons Card -->
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-5">
-                    
-                    <!-- Pros -->
-                    <div>
-                        <h3 class="flex items-center space-x-2 text-emerald-800 font-bold text-sm mb-3">
-                            <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                            <span>Why Buyers Love It (Pros)</span>
-                        </h3>
-                        <ul class="space-y-2.5">
-                            
-                            <li class="flex items-start space-x-2 text-xs sm:text-sm text-slate-700">
-                                <span class="text-emerald-600 font-bold flex-shrink-0">+</span>
-                                <span>Significantly cuts down preparation and organization time</span>
-                            </li>
-                            
-                            <li class="flex items-start space-x-2 text-xs sm:text-sm text-slate-700">
-                                <span class="text-emerald-600 font-bold flex-shrink-0">+</span>
-                                <span>Made with high-grade materials</span>
-                            </li>
-                            
-                            <li class="flex items-start space-x-2 text-xs sm:text-sm text-slate-700">
-                                <span class="text-emerald-600 font-bold flex-shrink-0">+</span>
-                                <span>Thousands of verified customer endorsements</span>
-                            </li>
-                            
-                        </ul>
-                    </div>
-
-                    <!-- Cons -->
-                    
-                    <div class="border-t border-slate-100 pt-4">
-                        <h3 class="flex items-center space-x-2 text-rose-800 font-bold text-sm mb-3">
-                            <svg class="w-4 h-4 text-rose-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
-                            <span>Things to Consider (Cons)</span>
-                        </h3>
-                        <ul class="space-y-2.5">
-                            
-                            <li class="flex items-start space-x-2 text-xs sm:text-sm text-slate-600">
-                                <span class="text-rose-500 font-bold flex-shrink-0">-</span>
-                                <span>May require some initial setup</span>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                    
-
-                </div>
-
-                <!-- Secondary Call To Action Box -->
-                <div class="bg-[#e6f0fa] rounded-2xl p-5 border border-[#bce1fa] text-center space-y-3">
-                    <p class="font-bold text-[#001c64] text-sm">Tap the link to check current price and Prime shipping on Amazon!</p>
-                    <p class="text-xs text-slate-600">Prime shipping verified with 30-day return policy.</p>
-                    <a href="https://www.amazon.com/dp/B00EINBSEW?tag=theprimenestf-20&amp;linkCode=as2" target="_blank" rel="nofollow noopener sponsored"
-                       class="block w-full bg-[#001c64] hover:bg-[#003087] text-white font-bold text-sm py-3 px-4 rounded-xl shadow transition duration-200">
-                        View Live Price on Amazon &rarr;
-                    </a>
-                </div>
-
+        <!-- Full-Width Horizontal Secondary Call To Action Banner -->
+        <div class="bg-gradient-to-r from-[#e6f0fa] via-blue-50 to-[#e6f0fa] rounded-2xl p-6 border border-[#bce1fa] shadow-sm mb-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="space-y-1 text-center sm:text-left">
+                <p class="font-extrabold text-[#001c64] text-base sm:text-lg">Tap the link to check current price and Prime shipping on Amazon!</p>
+                <p class="text-xs sm:text-sm text-slate-600">Prime shipping verified with official 30-day return policy &amp; latest discount.</p>
             </div>
+            <a href="https://www.amazon.com/dp/B00EINBSEW?tag=theprimenestf-20&amp;linkCode=as2" target="_blank" rel="nofollow noopener sponsored"
+               class="w-full sm:w-auto px-8 py-3.5 bg-[#001c64] hover:bg-[#003087] text-white font-extrabold text-sm rounded-xl shadow-md transition duration-200 text-center whitespace-nowrap">
+                View Live Price on Amazon &rarr;
+            </a>
         </div>
 
         <!-- Frequently Bought Together / Top Niche Alternatives (Upsell Box) -->
@@ -365,15 +362,15 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 
                 <div class="flex items-center space-x-3.5 p-3.5 rounded-xl border border-slate-200 bg-slate-50/60 hover:bg-[#e6f0fa] hover:border-[#bce1fa] transition-all duration-200">
-                    <img src="https://m.media-amazon.com/images/I/61N+V8dFDSL._SL1500_.jpg" alt="Ceramic Donut Vase Set of 2 (Nordic Minimalist Aesthetic Decor)" class="w-16 h-16 object-contain rounded-xl bg-white p-1 border border-slate-200 flex-shrink-0 shadow-sm">
+                    <img src="https://m.media-amazon.com/images/I/71OywSYVdzL._SL1500_.jpg" alt="LEGO Botanicals Succulents 10309 | Back to School Gift for Students &amp; Teachers, Building Set for Adults, Ages 18+, 771 Pieces, Artificial Plant Home Decor" class="w-16 h-16 object-contain rounded-xl bg-white p-1 border border-slate-200 flex-shrink-0 shadow-sm">
                     <div class="flex-grow min-w-0">
-                        <span class="text-[10px] font-extrabold text-[#0070ba] uppercase tracking-wide">Aesthetic Trend</span>
-                        <h3 class="text-xs font-bold text-slate-800 line-clamp-1 truncate">Ceramic Donut Vase Set of 2 (Nordic Minimalist Aesthetic Decor)</h3>
+                        <span class="text-[10px] font-extrabold text-[#0070ba] uppercase tracking-wide">Amazon Choice</span>
+                        <h3 class="text-xs font-bold text-slate-800 line-clamp-1 truncate">LEGO Botanicals Succulents 10309 | Back to School Gift for Students &amp; Teachers, Building Set for Adults, Ages 18+, 771 Pieces, Artificial Plant Home Decor</h3>
                         <div class="flex items-center space-x-2 mt-0.5">
-                            <span class="font-extrabold text-sm text-[#001c64]">$23.99</span>
-                            <span class="text-[11px] text-amber-600 font-semibold">★ 4.7</span>
+                            <span class="font-extrabold text-sm text-[#001c64]">$36.70</span>
+                            <span class="text-[11px] text-amber-600 font-semibold">★ 4.9</span>
                         </div>
-                        <a href="https://www.amazon.com/dp/B099K1N33N?tag=theprimenestf-20&amp;linkCode=as2" target="_blank" rel="nofollow noopener sponsored"
+                        <a href="https://www.amazon.com/dp/B09Q4GWMZQ?tag=theprimenestf-20&amp;linkCode=as2" target="_blank" rel="nofollow noopener sponsored"
                            class="inline-flex items-center gap-1 text-[11px] font-extrabold text-[#0070ba] hover:text-[#003087] mt-1">
                             <span>Check on Amazon</span> &rarr;
                         </a>
@@ -381,15 +378,15 @@
                 </div>
                 
                 <div class="flex items-center space-x-3.5 p-3.5 rounded-xl border border-slate-200 bg-slate-50/60 hover:bg-[#e6f0fa] hover:border-[#bce1fa] transition-all duration-200">
-                    <img src="https://m.media-amazon.com/images/I/61WkQoE7k0L._SL1500_.jpg" alt="Sunset Lamp Projection Light for Aesthetic Room Ambiance" class="w-16 h-16 object-contain rounded-xl bg-white p-1 border border-slate-200 flex-shrink-0 shadow-sm">
+                    <img src="https://m.media-amazon.com/images/I/71ZjV0QJZkL._SL1500_.jpg" alt="COLLECTIVE HOME Ceramic Jewelry Tray, Trinket Dish, Gifts for Women (M) | Mother&#39;s Day, Birthday, Christmas, Engagement Gifts, Vanity, Nightstand Decor, Embossed Gold Monogram Ring Dish with Gift Box" class="w-16 h-16 object-contain rounded-xl bg-white p-1 border border-slate-200 flex-shrink-0 shadow-sm">
                     <div class="flex-grow min-w-0">
-                        <span class="text-[10px] font-extrabold text-[#0070ba] uppercase tracking-wide">TikTok Favorite</span>
-                        <h3 class="text-xs font-bold text-slate-800 line-clamp-1 truncate">Sunset Lamp Projection Light for Aesthetic Room Ambiance</h3>
+                        <span class="text-[10px] font-extrabold text-[#0070ba] uppercase tracking-wide">Amazon Choice</span>
+                        <h3 class="text-xs font-bold text-slate-800 line-clamp-1 truncate">COLLECTIVE HOME Ceramic Jewelry Tray, Trinket Dish, Gifts for Women (M) | Mother&#39;s Day, Birthday, Christmas, Engagement Gifts, Vanity, Nightstand Decor, Embossed Gold Monogram Ring Dish with Gift Box</h3>
                         <div class="flex items-center space-x-2 mt-0.5">
-                            <span class="font-extrabold text-sm text-[#001c64]">$16.99</span>
-                            <span class="text-[11px] text-amber-600 font-semibold">★ 4.4</span>
+                            <span class="font-extrabold text-sm text-[#001c64]">$11.99</span>
+                            <span class="text-[11px] text-amber-600 font-semibold">★ 4.9</span>
                         </div>
-                        <a href="https://www.amazon.com/dp/B08D3R43G9?tag=theprimenestf-20&amp;linkCode=as2" target="_blank" rel="nofollow noopener sponsored"
+                        <a href="https://www.amazon.com/dp/B09RPKGVDW?tag=theprimenestf-20&amp;linkCode=as2" target="_blank" rel="nofollow noopener sponsored"
                            class="inline-flex items-center gap-1 text-[11px] font-extrabold text-[#0070ba] hover:text-[#003087] mt-1">
                             <span>Check on Amazon</span> &rarr;
                         </a>
